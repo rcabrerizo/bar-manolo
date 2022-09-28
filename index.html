@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bar Manolo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script> 
+</head>
+<body>
+
+<audio id="cubata" src="audio/cubata.opus"></audio>
+<audio id="pagatu" src="audio/pagatu.opus"></audio>
+<audio id="euros" src="audio/euros.opus"></audio>
+<audio id="maricon" src="audio/maricon.opus"></audio>
+
+    
+    
+    
+    
+<div class="camps" id="formulari">
+    <label>Nom:</label>
+    <br/>
+    <input type="text" id="nom"/>
+    <br/>
+    <label>Pes</label>
+    <br/>
+    <input type="text" id="pes"/>
+    <br/>
+    <br/>
+    <label>Sexe:</label>
+    <br/>
+    <select name="sexe" id="sexe">
+        <option value="home">HOME</option>
+        <option value="dona">DONA</option>
+      </select>
+    <br/>
+    <button class="accept" value="aceptar" id="accept" onclick="carregarPersona()">COMENÇAR</button>
+</div>
+<div class="menu" id="menus">
+    
+    <div class="informacio">
+        <div class="persona">
+            <table>
+            <tr>
+                <td><h1>Nom:</h1></td>
+                <td><h1 id="infonom"></h1></td>
+            </tr>
+            <tr>
+                <td><h1>Pes:</h1></td>
+                <td><h1 id="infopes"></h1></td>
+            </tr>
+                <tr>
+                    <td><h1>Sexe:</h1></td>
+                    <td><h1 id="infosexe"></h1></td>
+                </tr>
+            </table>
+        </div>
+        <div id="vida">
+            <h1>Nivell d'alchoemia</h1>
+            <div id="barra">
+            </div>
+        </div>
+    </div>
+    <div class="principal">
+        <img alt="barmanolo" src="img/fons.jpg"/>
+    </div>
+    <div class="carta">
+        <div class="titol">
+            <h1>LA CARTA</h1>
+        </div>
+        <div id="baso">
+            <div id="water">
+            </div>
+        </div>
+        <div class="bebidas">
+            <ul>
+                <li><button class="alchol" value="40" id="vozka" onclick="demanar(this)">VOZKA</button></li>
+                <li><button class="alchol" value="42" id="wisky" onclick="demanar(this)">WISKEY</button></li>
+                <li><button class="alchol" value="42" id="ron" onclick="demanar(this)">RON</button></li>
+            </ul>
+            <ul>
+                <li><button class="alchol" value="5" id="cerveza" onclick="demanar(this)">CERVEZA</button></li>
+                <li><button class="alchol" value="3" id="carajillo" onclick="demanar(this)">CARAJILLO</button></li>
+                <li><button class="alchol" value="25" id="solysombra" onclick="demanar(this)">SyS</button></li>
+            </ul>
+            <ul>
+                <li><button class="alchol" value="40" id="ginebra" onclick="demanar(this)">GINEBRA</button></li>
+                <li><button class="alchol" value="50" id="knebep" onclick="demanar(this)">KNEBEP</button></li>
+                <li><button class="alchol" value="35" id="jaguer" onclick="demanar(this)">JAGÜER</button></li>
+            </ul>
+            <ul>
+                <li><button class="alchol" value="-10" id="agua" onclick="demanar(this)">AGUA</button></li>
+                <li><button class="alchol" value="46" id="tgv" onclick="demanar(this)">TGV</button></li>
+                <li><button class="alchol" value="12" id="vino" onclick="demanar(this)">VINO</button></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
